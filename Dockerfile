@@ -1,7 +1,7 @@
 FROM vixns/java8:latest
 
-RUN mv /etc/apt/sources.list /etc/apt/sources.list_backup
-COPY ./sources.list /etc/apt/sources.list
+# RUN mv /etc/apt/sources.list /etc/apt/sources.list_backup
+# COPY ./sources.list /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get install -y nodejs npm
 
