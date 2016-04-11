@@ -1,4 +1,4 @@
-FROM vixns/docker-java8
+FROM vixns/java8:latest
 
 RUN mv /etc/apt/sources.list /etc/apt/sources.list_backup
 COPY ./sources.list /etc/apt/sources.list
