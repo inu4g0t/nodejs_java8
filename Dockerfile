@@ -2,8 +2,8 @@ FROM ubuntu:latest
 
 # RUN mv /etc/apt/sources.list /etc/apt/sources.list_backup
 # COPY ./sources.list /etc/apt/sources.list
-RUN apt-get install software-properties-common 
-RUN add-apt-repository ppa:webupd8team/java
+RUN apt-get -y install software-properties-common 
+RUN add-apt-repository -y ppa:webupd8team/java
 RUN apt-get install -y oracle-java8-installer oracle-java8-set-default
 RUN apt-get install -y nodejs npm
 
