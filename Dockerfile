@@ -16,7 +16,7 @@ RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 #COPY ./test /test
 #RUN cd /test; npm install;
-#EXPOSE 3000
+EXPOSE 3000
 #COPY ./start.sh /start.sh
 #CMD ["sh", "/start.sh"]
 CMD ["java", "-version"]                          
